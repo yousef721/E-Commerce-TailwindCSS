@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../main.css" />
+    <title>Product</title>
+  </head>
+  <body>
+    <header id="header"></header>
+    <main>
+      <section class="head-section">
+        <div id="page-header" data-title="Product"></div>
+      </section>
+      <section class="main-section">
+        <div
+          class="container mx-auto px-4 grid grid-col-1 md:grid-cols-6 gap-5 my-10"
+        >
+          <div class="hidden md:block md:col-span-2">
+            <div id="price-filter"></div>
+            <div class="my-10">
+              <h1 class="text-2xl font-bold mb-5">Top rated products</h1>
+              <div class="flex flex-col gap-5">
+                <div
+                  class="product-mini-card"
+                  data-title="Quartz Watch"
+                  data-image="../assets/images/shop-item-3.webp"
+                  data-stars="5"
+                  data-price="$50.00"
+                ></div>
+                <div
+                  class="product-mini-card"
+                  data-title="Black T-shirt"
+                  data-image="../assets/images/shop-item-7.webp"
+                  data-stars="5"
+                  data-price="$50.00"
+                ></div>
+                <div
+                  class="product-mini-card"
+                  data-title="Color Sneakers"
+                  data-image="../assets/images/shop-item-8.webp"
+                  data-stars="4"
+                  data-price="$50.00"
+                ></div>
+                <div
+                  class="product-mini-card"
+                  data-title="Snapback Cap"
+                  data-image="../assets/images/shop-item-10.webp"
+                  data-stars="4"
+                  data-price="$30.00"
+                ></div>
+                <div
+                  class="product-mini-card"
+                  data-title="Gray Shoes"
+                  data-image="../assets/images/shop-item-6.webp"
+                  data-stars="3"
+                  data-price="$50.00"
+                ></div>
+              </div>
+            </div>
+            <div id="cloth-technologies"></div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 col-span-4 gap-7">
+            <div
+              class="product-card"
+              data-is-sale="true"
+              data-title="Black T-shirt"
+              data-price="$50.00"
+              data-stars="5"
+              data-category="T-Shirts"
+              data-image="../assets/images/shop-item-7.webp"
+            ></div>
+            <div
+              class="product-card"
+              data-is-sale="false"
+              data-title="Brown Cap"
+              data-price="$25.00"
+              data-stars="0"
+              data-category="Accessories"
+              data-image="../assets/images/shop-item-2.webp"
+            ></div>
+            <div
+              class="product-card"
+              data-is-sale="true"
+              data-title="Color Sneakers"
+              data-price="$50.00"
+              data-stars="4"
+              data-category="Sneakers"
+              data-image="../assets/images/shop-item-8.webp"
+            ></div>
+            <div
+              class="product-card"
+              data-is-sale="false"
+              data-title="Elegant Bag"
+              data-price="50.00"
+              data-stars="0"
+              data-category="Accessories"
+              data-image="../assets/images/shop-item-1.webp"
+            ></div>
+            <div
+              class="product-card"
+              data-is-sale="false"
+              data-title="Gray Shoes"
+              data-price="$50.00"
+              data-stars="3"
+              data-category="Sneakers"
+              data-image="../assets/images/shop-item-6.webp"
+            ></div>
+            <div
+              class="product-card"
+              data-is-sale="true"
+              data-title="Quartz Watch"
+              data-price="$50.00"
+              data-stars="5"
+              data-category="Accessories"
+              data-image="../assets/images/shop-item-3.webp"
+            ></div>
+            <div
+              class="product-card"
+              data-is-sale="true"
+              data-title="Retro Sunglasses"
+              data-price="$55.00"
+              data-stars="0"
+              data-category="Accessories"
+              data-image="../assets/images/shop-item-9.webp"
+            ></div>
+            <div
+              class="product-card"
+              data-is-sale="true"
+              data-title="Snapback Cap"
+              data-price="$30.00"
+              data-stars="4"
+              data-category="Accessories"
+              data-image="../assets/images/shop-item-10.webp"
+            ></div>
+            <div
+              class="product-card"
+              data-is-sale="true"
+              data-title="Stonewall Sneakers"
+              data-price="$60.00"
+              data-stars="0"
+              data-category="Sneakers"
+              data-image="../assets/images/shop-item-4.webp"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      id="footer"
+      class="mt-10 md:mt-20 bg-gray-100 pt-10 md:pt-20 pb-10"
+    ></footer>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
