@@ -1,10 +1,12 @@
-export default function BlogCard() {
-  var cards = document.getElementsByClassName("blog-card");
-
+import { getBlogArticleById } from "./BlogArticleActions.js";
+export default function BlogArticle() {
+  var cards = document.getElementsByClassName("blog-article");
   for (let i = 0; i < cards.length; i++) {
-    const img = cards[i].dataset.image;
-    const title = cards[i].dataset.title;
-    const category = cards[i].dataset.category;
+    const id = cards[i].dataset.id;
+    const article = getBlogArticleById(id);
+    const img = article.image;
+    const title = article.title;
+    const category = article.category;
 
     cards[i].innerHTML = `
         <img src="${img}" alt="" />

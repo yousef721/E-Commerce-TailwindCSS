@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "title": "Black T-shirt",
+    "category": "T-Shirts",
+    "price": 50.0,
+    "image": "../assets/images/ProductsIMG/shop-item-7.webp",
+    "stars": 5,
+    "isSale": true,
+    "description": "High-quality black cotton t-shirt perfect for casual wear",
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "title": "Quartz Watch",
+    "category": "Accessories",
+    "price": 50.0,
+    "image": "../assets/images/ProductsIMG/shop-item-3.webp",
+    "stars": 5,
+    "isSale": true,
+    "description": "Stylish quartz watch with precision timing",
+    "inStock": true
+  },
+  {
+    "id": 3,
+    "title": "Color Sneakers",
+    "category": "Sneakers",
+    "price": 50.0,
+    "image": "../assets/images/ProductsIMG/shop-item-8.webp",
+    "stars": 4,
+    "isSale": true,
+    "description": "Comfortable colorful sneakers for everyday use",
+    "inStock": true
+  },
+  {
+    "id": 4,
+    "title": "Snapback Cap",
+    "category": "Hats",
+    "price": 30.0,
+    "image": "../assets/images/ProductsIMG/shop-item-10.webp",
+    "stars": 4,
+    "isSale": true,
+    "description": "Classic snapback cap with adjustable fit",
+    "inStock": true
+  },
+  {
+    "id": 5,
+    "title": "Gray Shoes",
+    "category": "Sneakers",
+    "price": 50.0,
+    "image": "../assets/images/ProductsIMG/shop-item-6.webp",
+    "stars": 3,
+    "isSale": false,
+    "description": "Comfortable gray shoes for all occasions",
+    "inStock": true
+  },
+  {
+    "id": 6,
+    "title": "Retro Sunglasses",
+    "category": "Accessories",
+    "price": 50.0,
+    "image": "../assets/images/ProductsIMG/shop-item-9.webp",
+    "stars": 0,
+    "isSale": true,
+    "description": "Retro sunglasses with UV protection",
+    "inStock": true
+  },
+  {
+    "id": 7,
+    "title": "Brown Cap",
+    "category": "Hats",
+    "price": 25.0,
+    "image": "../assets/images/ProductsIMG/shop-item-2.webp",
+    "stars": 0,
+    "isSale": false,
+    "description": "Classic brown cap with adjustable fit",
+    "inStock": true
+  },
+  {
+    "id": 8,
+    "title": "Elegant Bag",
+    "category": "Accessories",
+    "price": 50.0,
+    "image": "../assets/images/ProductsIMG/shop-item-1.webp",
+    "stars": 0,
+    "isSale": false,
+    "description": "High-quality elegant bag for everyday use",
+    "inStock": true
+  },
+  {
+    "id": 9,
+    "title": "Stonewall Sneakers",
+    "category": "Sneakers",
+    "price": 60.0,
+    "image": "../assets/images/ProductsIMG/shop-item-4.webp",
+    "stars": 0,
+    "isSale": true,
+    "description": "High-quality stonewall sneakers for everyday use",
+    "inStock": true
+  }
+]

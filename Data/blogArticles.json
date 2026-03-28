@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Lobortis Elementum Nibhtellus Molestie Mauris",
+    "category": "LifeStyle",
+    "image": "../assets/images/BlogArticle/blog-article-thumb-7.webp"
+  },
+  {
+    "id": 2,
+    "title": "Condimentum Odvenenatis Vestibulum Dapibus",
+    "category": "Trends",
+    "image": "../assets/images/BlogArticle/blog-article-thumb-6.webp"
+  },
+  {
+    "id": 3,
+    "title": "Accumsan Tortor Posuere Acut Consequat",
+    "category": "LifeStyle",
+    "image": "../assets/images/BlogArticle/blog-article-thumb-5.webp"
+  },
+  {
+    "id": 4,
+    "title": "Malesuada Bibendum Arcu Elementum Laoreet",
+    "category": "LifeStyle",
+    "image": "../assets/images/BlogArticle/blog-article-thumb-1.webp"
+  },
+  {
+    "id": 5,
+    "title": "Consequat Semper Viverra Nam Libero",
+    "category": "LifeStyle",
+    "image": "../assets/images/BlogArticle/blog-article-thumb-3.webp"
+  },
+  {
+    "id": 6,
+    "title": "Tristique Senectus Etnetus Otmalesuada",
+    "category": "LifeStyle",
+    "image": "../assets/images/BlogArticle/blog-article-thumb-2.webp"
+  }
+]

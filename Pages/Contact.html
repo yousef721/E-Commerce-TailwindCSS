@@ -13,11 +13,99 @@
   <body>
     <header id="header"></header>
     <section class="head-section">
-      <div id="page-header-2" data-title="Contact" data-page="Contact Us"></div>
+      <div id="page-header-2" data-title="Contact Us" data-page="Contact"></div>
     </section>
-    <main>
+    <main class="-mt-45">
+      <section class="w-full pb-10 md:pb-16">
+        <div class="container mx-auto px-4">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-5 items-center gap-10 md:gap-16"
+          >
+            <div
+              class="bg-red-700 relative col-span-5 lg:col-span-3 flex justify-center"
+            >
+              <img
+                src="../assets/images/Contact/contact-us-image.webp"
+                class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full object-contain -mt-10 sm:-mt-16 md:-mt-20"
+                alt="Contact Us"
+              />
+            </div>
+            <div class="w-full col-span-5 lg:col-span-2">
+              <h2
+                class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-8 md:mb-10 text-center lg:text-left"
+              >
+                Contact with us
+              </h2>
+
+              <form action="#" method="POST">
+                <div class="grid grid-cols-1 gap-x-6 gap-y-5 sm:grid-cols-2">
+                  <div>
+                    <label class="block text-sm font-semibold text-gray-900">
+                      First name
+                    </label>
+                    <input
+                      type="text"
+                      class="mt-2 w-full bg-white px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600"
+                    />
+                  </div>
+
+                  <div>
+                    <label class="block text-sm font-semibold text-gray-900">
+                      Last name
+                    </label>
+                    <input
+                      type="text"
+                      class="mt-2 w-full bg-white px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600"
+                    />
+                  </div>
+
+                  <div class="sm:col-span-2">
+                    <label class="block text-sm font-semibold text-gray-900">
+                      Phone number
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="123-456-7890"
+                      class="mt-2 w-full bg-white px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600"
+                    />
+                  </div>
+
+                  <div class="sm:col-span-2">
+                    <label class="block text-sm font-semibold text-gray-900">
+                      Email Address
+                    </label>
+                    <input
+                      type="email"
+                      class="mt-2 w-full bg-white px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600"
+                    />
+                  </div>
+
+                  <div class="sm:col-span-2">
+                    <label class="block text-sm font-semibold text-gray-900">
+                      Your Message
+                    </label>
+                    <textarea
+                      rows="4"
+                      class="mt-2 w-full bg-white px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="mt-8">
+                  <button
+                    type="submit"
+                    class="w-full lg:w-fit bg-red-700 py-3 px-5 text-white hover:bg-red-800 transition"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="footer" class="bg-gray-100 pt-10 md:pt-20 pb-10"></footer>
-    <script type="module" src="../main.js"></script>
+    <script type="module" src="../js/main.js"></script>
   </body>
 </html>
