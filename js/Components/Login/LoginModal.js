@@ -2,9 +2,12 @@ export default function LoginModal() {
   return `
         <div id="login-modal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
             <div class="bg-white p-12 mx-2 w-full max-w-md rounded-md shadow-lg">
+            <p id="invalid" class="hidden text-sm text-red-600 mb-2" role="alert">
+                Invalid email or password.
+            </p>
             <form id="login-form" class="flex flex-col gap-4">
                 <label for="email" class="text-gray-500 text-sm">
-                Username or Email Address
+                Email Address
                 </label>
                 <input
                 type="email"

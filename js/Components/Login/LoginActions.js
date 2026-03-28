@@ -40,15 +40,22 @@ class Login {
 
 export const login = new Login();
 
-const loginForm = document.getElementById("login-form");
-if (loginForm) {
+export function initLogin() {
+  const loginForm = document.getElementById("login-form");
+  
+  if (!loginForm) {
+    console.error("❌ login-form not found");
+    return;
+  }
+
   loginForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    const email = document.getElementById("email")?.value;
+    const password = document.getElementById("password")?.value;
 
     const success = login.login(email, password);
+    console.log(success)
 
     if (success) {
       document.getElementById("login-modal")?.classList.add("hidden");

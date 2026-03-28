@@ -54,11 +54,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Page Header
   const pageHeader2 = document.getElementById("page-header-2");
   if (pageHeader2) pageHeader2.innerHTML = PageHeader2();
-
-  // login modal
-  const loginModal = document.getElementById("login-modal-section");
-  if (loginModal) loginModal.innerHTML = LoginModal();
-
+  
   // search modal
   const searchModal = document.getElementById("search-modal-section");
   if (searchModal) searchModal.innerHTML = SearchModal();
@@ -96,9 +92,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   const navbarActions = document.getElementById("header");
   if (navbarActions) await import("./Components/Navbar/NavbarAction.js");
 
-  // Login Actions
-  const loginActions = document.getElementById("login-modal-section");
-  if (loginActions) await import("./Components/Login/LoginActions.js");
+  // 🔥 LOGIN MODAL (Render + Init)
+  const loginModal = document.getElementById("login-modal-section");
+  if (loginModal) {
+    loginModal.innerHTML = LoginModal();
+
+    const module = await import("./Components/Login/LoginActions.js");
+    module.initLogin();
+  }
 
   // Price Range
   PriceRange();
