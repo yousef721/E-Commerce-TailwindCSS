@@ -89,10 +89,10 @@ export default function ProductCart(items) {
         <h1 class="font-bold">Cart totals</h1>
         <div class="cart-totals">
           <div class="flex justify-between py-5 border-b-1 border-dotted border-gray-300 text-gray-500">
-            <h2 class="font-bold">Totals</h2> <p>$${cart.getTotal().toFixed(2)}</p>
+            <h2 class="font-bold">Subtotal</h2> <p>$${cart.getTotal().toFixed(2)}</p>
           </div>
           <div class="flex justify-between py-5 text-gray-500">
-            <h2 class="font-bold">Subtotal</h2>
+            <h2 class="font-bold">Totals</h2>
             <p class="font-bold">$${cart.getTotal().toFixed(2)}</p>
           </div>
           <button id="checkout" class="w-full bg-red-700 text-white px-4 py-2 mt-4 hover:bg-red-800">
