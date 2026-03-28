@@ -1,6 +1,5 @@
 import { cart } from "./ShoppingCart.js";
 export default function ProductCart(items) {
-  console.log("Rendering ProductCart with items:", items);
   return `
     <div class="grid grid-cols-1 lg:grid-cols-6 gap-10">
       <div class="lg:col-span-4">
