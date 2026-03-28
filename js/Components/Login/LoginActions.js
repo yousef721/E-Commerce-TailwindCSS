@@ -41,7 +41,6 @@ class Login {
 export const login = new Login();
 
 const loginForm = document.getElementById("login-form");
-
 if (loginForm) {
   loginForm.addEventListener("submit", (e) => {
     e.preventDefault();
