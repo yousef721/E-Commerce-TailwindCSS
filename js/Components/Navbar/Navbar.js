@@ -14,7 +14,7 @@ export default function Navbar(page) {
           </a>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-          <a href="../index.html" class="text-lg text-gray-900 ${isActive("home")}">Home</a>
+          <a href="../index.html" class="text-lg text-gray-900 ${isActive("index")}">Home</a>
           <a href="../Pages/product.html" class="text-lg text-gray-900 hover:border-b-2 ${isActive("product")}">Products</a>
           <a href="../Pages/services.html" class="text-lg text-gray-900 hover:border-b-2 ${isActive("services")}">Services</a>
           <a href="../Pages/about.html" class="text-lg text-gray-900 hover:border-b-2 ${isActive("about")}">About</a>
