@@ -15,7 +15,7 @@ export default function Subscribe() {
             method="get"
         >
             <input
-            id="email"
+            id="subscribe-email"
             type="email"
             name="email"
             placeholder="Email address"
