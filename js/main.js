@@ -96,6 +96,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   const navbarActions = document.getElementById("header");
   if (navbarActions) await import("./Components/Navbar/NavbarAction.js");
 
+  // Login Actions
+  const loginActions = document.getElementById("login-modal-section");
+  if (loginActions) await import("./Components/Login/LoginActions.js");
+
   // Price Range
   PriceRange();
 

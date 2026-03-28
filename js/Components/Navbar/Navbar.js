@@ -1,4 +1,5 @@
 import { cart } from "../ShoppingCart/ShoppingCart.js";
+import { login } from "../Login/LoginActions.js";
 export default function Navbar(page) {
   const isActive = (name) =>
     page.includes(name)
@@ -25,9 +26,15 @@ export default function Navbar(page) {
           <div id="search-btn" class="hidden lg:block cursor-pointer">
             <i class="fa-solid fa-magnifying-glass hover:text-red-700 transition-colors"></i>
           </div>
-          <div id="login-btn" class="hidden lg:block cursor-pointer">
-              <i class="fa-solid fa-circle-user hover:text-red-700 transition-colors"></i>
-          </div>
+          ${login.isLoggedIn() === "true" ? 
+            `<div id="logged" class="hidden lg:block cursor-pointer">
+                <i class="fa-solid fa-circle-user hover:text-red-700 transition-colors"></i>
+            </div>`
+              :
+            `<div id="login-btn" class="hidden lg:block cursor-pointer">
+                <i class="fa-solid fa-user-lock hover:text-red-700 transition-colors"></i>
+            </div>`
+          }
           <div class="hidden lg:block relative">
             <a href="../Pages/cart.html" class="hover:text-red-700 transition-colors">
               <i class="fa-solid fa-cart-shopping"></i>

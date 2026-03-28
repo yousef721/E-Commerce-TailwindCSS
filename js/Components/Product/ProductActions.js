@@ -10,7 +10,6 @@ export function filterProductsByPrice(min, max) {
   return products.filter((p) => p.price >= min && p.price <= max);
 }
 
-
 export function buttonViewCart() {
   const viewCartButtons = document.querySelectorAll(".view-cart");
   viewCartButtons.forEach((button) => {
@@ -20,7 +19,7 @@ export function buttonViewCart() {
   });
 }
 
-// Price Range UI
+// Price Range
 const minRange = document.getElementById("min-range");
 const maxRange = document.getElementById("max-range");
 const minPrice = document.getElementById("min-price");

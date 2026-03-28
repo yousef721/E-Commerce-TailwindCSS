@@ -1,5 +1,6 @@
 import { getProductById } from "./ProductActions.js";
 import { cart } from "../ShoppingCart/ShoppingCart.js";
+import { login } from "../Login/LoginActions.js";
 export default function ProductCard(cards) {
   for (let i = 0; i < cards.length; i++) {
     const id = cards[i].dataset.id;
@@ -80,6 +81,7 @@ export default function ProductCard(cards) {
     }
     const btn = cards[i].querySelector(".add-to-cart");
     const viewBtn = cards[i].querySelector(".view-cart");
+
     if (cart.isFound(id)) {
       if (btn) btn.classList.add("hidden");
       if (viewBtn) viewBtn.classList.remove("hidden");
@@ -90,9 +92,20 @@ export default function ProductCard(cards) {
 
     if (btn) {
       btn.addEventListener("click", (e) => {
-        cart.addItem(getProductById(e.target.dataset.id));
-        btn.classList.add("hidden");
-        if (viewBtn) viewBtn.classList.remove("hidden");
+        const isLogin = login.isLoggedIn() === "true";
+
+        if (isLogin) {
+          const productId = e.currentTarget.dataset.id;
+
+          cart.addItem(getProductById(productId));
+
+          btn.classList.add("hidden");
+          if (viewBtn) viewBtn.classList.remove("hidden");
+
+        } else {
+          const modal = document.getElementById("login-modal-section");
+          if (modal) modal.classList.remove("hidden");
+        }
       });
     }
   }
